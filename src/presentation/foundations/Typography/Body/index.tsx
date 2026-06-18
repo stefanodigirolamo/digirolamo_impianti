@@ -34,7 +34,7 @@ export interface BodyProps {
    * @type "span" | "p" | "label" | "h4" | "h5"
    * @required
    */
-  component?: keyof Pick<JSX.IntrinsicElements, 'span' | 'p' | 'label' | 'h4' | 'h5'>;
+  component?: keyof Pick<React.JSX.IntrinsicElements, 'span' | 'p' | 'label' | 'h4' | 'h5'>;
   /**
    * The text  role
    * @type  'article' | 'caption' | 'listitem' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'option' | 'none'

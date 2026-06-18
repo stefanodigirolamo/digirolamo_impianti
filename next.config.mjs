@@ -2,7 +2,14 @@
 
 const nextConfig = {
   images: {
-    domains: ['dummyjson.com'],
+    remotePatterns: [
+       {
+        protocol: "https",
+        hostname: "dummyjson.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

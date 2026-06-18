@@ -9,14 +9,14 @@ export interface TypographyProps {
    * @type string
    * @required
    */
-  children: string | number | JSX.Element;
+  children: string | number | React.JSX.Element;
   /**
    * The component type.
    * @type 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | 'label' | 'p' | 'q'
    * @required
    */
   component: keyof Pick<
-    JSX.IntrinsicElements,
+    React.JSX.IntrinsicElements,
     'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | 'label' | 'p' | 'time' | 'a' | 'q'
   >;
   /**

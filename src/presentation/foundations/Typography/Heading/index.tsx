@@ -26,7 +26,7 @@ export interface HeadingProps {
    * The component type.
    * @type 'h1' | 'h2' | "h3" | "h4"| "h5" | "h6"
    */
-  component?: keyof Pick<JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'>;
+  component?: keyof Pick<React.JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'>;
   /**
    * The heading title
    */

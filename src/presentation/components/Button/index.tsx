@@ -16,10 +16,10 @@ export type ButtonProps = {
   id: string;
   /**
    * The content of the button.
-   * @type string | JSX.Element;
+   * @type string | React.JSX.Element;
    * @required
    */
-  children: string | JSX.Element;
+  children: string | React.JSX.Element;
   /**
    * The type of the button.
    * @default 'button'
@@ -42,14 +42,14 @@ export type ButtonProps = {
   disabled?: boolean;
   /**
    * optional before icon.
-   * @type (props: IconProps) => JSX.Element;
+   * @type (props: IconProps) => React.JSX.Element;
    */
-  beforeIcon?: (props: IconProps) => JSX.Element;
+  beforeIcon?: (props: IconProps) => React.JSX.Element;
   /**
    * optional after icon.
-   * @type (props: IconProps) => JSX.Element;
+   * @type (props: IconProps) => React.JSX.Element;
    */
-  afterIcon?: (props: IconProps) => JSX.Element;
+  afterIcon?: (props: IconProps) => React.JSX.Element;
   /**
    * The action of the button.
    * @type MouseEventHandler<HTMLButtonElement>

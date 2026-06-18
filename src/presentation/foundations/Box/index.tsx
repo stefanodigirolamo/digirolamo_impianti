@@ -46,7 +46,7 @@ export interface BoxPropsOverride {
   /** style object to pass to top level element of the component */
   style?: React.CSSProperties;
   /** native dom component to render. Defaults to div */
-  component?: keyof JSX.IntrinsicElements;
+  component?: keyof React.JSX.IntrinsicElements;
 }
 
 export interface AriaAndDataProps extends AriaAttributes {

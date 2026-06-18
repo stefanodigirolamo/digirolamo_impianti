@@ -34,7 +34,7 @@ export interface TextButtonProps {
    * @type 'span' | 'p' | 'label'
    * @default "span"
    */
-  component?: keyof Pick<JSX.IntrinsicElements, 'span' | 'p'>;
+  component?: keyof Pick<React.JSX.IntrinsicElements, 'span' | 'p'>;
   /**
    * The TextLink role
    * @type 'link' | 'none'

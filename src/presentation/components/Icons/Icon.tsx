@@ -4,10 +4,10 @@ import { iconSize } from "./_iconUtils";
 type Props = IconProps & {
   /**
    * Define the content of the Icon.
-   * @type JSX.Element
+   * @type React.JSX.Element
    * @required
    */
-  children: JSX.Element;
+  children: React.JSX.Element;
 };
 
 export function Icon(props: Props) {

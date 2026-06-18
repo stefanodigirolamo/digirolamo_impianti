@@ -71,5 +71,5 @@ export type IconProps = {
 };
 
 export type IconSetType = {
-  [keys in keyof typeof IconSet]: (props: IconProps) => JSX.Element;
+  [keys in keyof typeof IconSet]: (props: IconProps) => React.JSX.Element;
 };
