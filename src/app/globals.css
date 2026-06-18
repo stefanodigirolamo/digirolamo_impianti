@@ -1,9 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
-  background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(169, 171, 170, 1) 50%, rgba(125, 122, 122, 1) 100%);
+  background:
+  radial-gradient(
+    circle at 50% 35%,
+    rgba(20, 54, 88, 0.55) 0%,
+    rgba(20, 54, 88, 0) 48%
+  ),
+  linear-gradient(
+    180deg,
+    #1f2933 0%,
+    #17212b 52%,
+    #111820 100%
+  );
   overflow: hidden;
 }
 

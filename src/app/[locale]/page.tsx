@@ -1,14 +1,17 @@
-import TranslationsProvider from '@/presentation/providers/TranslationsProvider';
-import initTranslations from '../i18n';
+import I18nProvider from '@/presentation/providers/i18nProvider';
 import { Hp } from '@/presentation/blocks/pages/Hp';
 
-const i18nNamespaces = ['home'];
+type HomePageProps = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
 
-export default async function HomePage({ params: { locale } }: any) {
-  const { resources } = await initTranslations(locale, i18nNamespaces);
+export default async function HomePage({ params }: HomePageProps) {
+  const { locale } = await params;
   return (
-    <TranslationsProvider namespaces={i18nNamespaces} locale={locale} resources={resources}>
+    <I18nProvider locale={locale}>
       <Hp />
-    </TranslationsProvider>
+    </I18nProvider>
   );
 }

@@ -1,42 +1,49 @@
-'use client';
+"use client";
 
-import i18nConfig from '../../../../i18nConfig';
-import Cookies from 'js-cookie';
-import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
-import { ChangeEvent } from 'react';
-import { useTranslation } from 'react-i18next';
+import i18nConfig from "../../../../i18nConfig";
+import Cookies from "js-cookie";
+import { useParams, usePathname, useRouter } from "next/navigation";
+import type { ChangeEvent } from "react";
 
 export function Selector() {
-  const { i18n } = useTranslation();
-  const currentLocale = i18n.language;
   const router = useRouter();
-  const currentPathname = usePathname();
+  const pathname = usePathname();
+  const params = useParams<{ locale: string }>();
 
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value;
+  const currentLocale =
+    typeof params.locale === "string"
+      ? params.locale
+      : i18nConfig.defaultLocale;
 
-    // set cookie for next-i18n-router
-    const days = 30;
-    const expires = new Date();
-    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const newLocale = event.target.value;
 
-    Cookies.set('NEXT_LOCALE', newLocale, { expires: expires, path: '/' });
+    Cookies.set("NEXT_LOCALE", newLocale, {
+      expires: 30,
+      path: "/",
+      sameSite: "lax",
+    });
 
-    // redirect to the new locale path
-    if (currentLocale === i18nConfig.defaultLocale) {
-      router.push('/' + newLocale + currentPathname);
+    const segments = pathname.split("/").filter(Boolean);
+
+    if (i18nConfig.locales.includes(segments[0])) {
+      segments[0] = newLocale;
     } else {
-      router.push(currentPathname.replace(`/${currentLocale}`, `/${newLocale}`));
+      segments.unshift(newLocale);
     }
 
-    router.refresh();
+    router.push(`/${segments.join("/")}`);
   };
 
   return (
-    <select onChange={handleChange} value={currentLocale} className='!bg-transparent font-semibold outline-none'>
-      <option value="it">Italian</option>
-      <option value="en">English</option>
+    <select
+      value={currentLocale}
+      onChange={handleChange}
+      aria-label="Select language"
+      className="!bg-transparent font-semibold outline-none text-white text-xs"
+    >
+      <option value="it">IT</option>
+      <option value="en">EN</option>
     </select>
   );
 }
