@@ -11,10 +11,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "digirolamo-impianti",
+  title: {
+    default: 'digirolamoimpianti',
+    template: '%s | digirolamoimpianti',
+  },
   description:
-    "Impianti fotovoltaici, elettrici civili, sistemi di allarme e VCC.",
-};
+    'digirolamoimpianti — installazione e manutenzione di impianti fotovoltaici.',
+  applicationName: 'digirolamoimpianti',
+  manifest: '/manifest.webmanifest',
+}
 
 export const viewport: Viewport = {
   width: "device-width",
