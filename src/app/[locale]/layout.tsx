@@ -4,15 +4,13 @@ import "../globals.css";
 import cx from "classnames";
 import { dir } from "i18next";
 import i18nConfig from "../../../i18nConfig";
-import { Space } from "@/presentation/foundations/Space";
 import { Header } from "@/presentation/blocks";
 import { Footer } from "@/presentation/blocks";
-import { spaceUnit } from "@/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "test_app",
+  title: "digirolamo-impianti",
   description: "nextjs ecommerce template app",
 };
 
@@ -33,12 +31,14 @@ export default async function RootLayout({
       <body
         className={cx(
           inter.className,
-          "h-screen flex flex-col items-between justify-between",
+          "h-screen flex flex-col justify-between",
         )}
       >
         <Header data-test-id="header" />
-        <div className="overflow-y-auto">{children}</div>
-        <Footer data-test-id="footer" />
+        <div className="overflow-y-auto">
+          {children}
+          <Footer data-test-id="footer" />
+        </div>
       </body>
     </html>
   );

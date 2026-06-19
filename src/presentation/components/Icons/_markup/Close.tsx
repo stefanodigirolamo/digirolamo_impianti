@@ -1,7 +1,7 @@
 export default (
   <path
-    fillRule="evenodd"
-    clipRule="evenodd"
+    fill="currentColor"
+    clip="currentColor"
     d="M31 4.92071L28.0793 2L16.5 13.5793L4.92071 2L2 4.92071L13.5793 16.5L2 28.0793L4.92071 31L16.5 19.4207L28.0793 31L31 28.0793L19.4207 16.5L31 4.92071Z"
   />
 );

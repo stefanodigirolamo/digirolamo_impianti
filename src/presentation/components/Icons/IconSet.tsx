@@ -1,5 +1,6 @@
 import Placeholder from './_markup/Placeholder';
 import Close from './_markup/Close';
+import Menu from './_markup/Menu';
 import Error from './_markup/Error';
 import Facebook from './_markup/Facebook';
 import Instagram from './_markup/Instagram';
@@ -17,6 +18,7 @@ import ArrowRight from './_markup/ArrowRight';
 export default {
   Placeholder,
   Close,
+  Menu,
   Error,
   Facebook,
   Instagram,

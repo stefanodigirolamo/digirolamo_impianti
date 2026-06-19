@@ -1,3 +1,120 @@
 {
-  "home.title": "Benvenuto in TestApp"
+  "header": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "contacts": "Contattaci"
+  },
+  "hero": {
+    "eyebrow": "Energia e tecnologia",
+    "title": "Energia che costruisce il futuro.",
+    "description": "Progettiamo e realizziamo impianti efficienti, affidabili e orientati alle esigenze di ogni cliente."
+  },
+  "about": {
+    "eyebrow": "Chi siamo",
+    "title": "Esperienza tecnica e innovazione al servizio dell'energia.",
+    "intro": "Una realtà giovane nella sua struttura, ma fondata su competenze, metodo e conoscenze maturate nel corso di anni di attività sul campo.",
+    "paragraph1": "digirolamoimpianti nasce nel luglio del 2023 con l'obiettivo di trasformare una lunga esperienza tecnica e operativa in un progetto aziendale moderno, affidabile e orientato al futuro.",
+    "paragraph2": "Sebbene l'azienda sia di recente costituzione, il suo valore si fonda sull'esperienza maturata negli anni nel settore VCC, un ambito nel quale precisione esecutiva, conoscenza degli impianti, capacità organizzativa e attenzione alla sicurezza rappresentano requisiti essenziali.",
+    "paragraph3": "Questo patrimonio di competenze costituisce oggi la base sulla quale digirolamoimpianti sviluppa la propria attività principale: la realizzazione di impianti fotovoltaici. L'azienda opera con un approccio concreto e strutturato, seguendo ogni progetto con attenzione alle caratteristiche del sito, alle esigenze del cliente e agli obiettivi energetici dell'intervento.",
+    "paragraph4": "Dalla preparazione delle aree all'installazione delle strutture, dal montaggio dei moduli alla predisposizione dei collegamenti impiantistici, ogni fase viene affrontata con accuratezza, coordinamento e responsabilità. L'obiettivo è costruire impianti efficienti, durevoli e capaci di garantire prestazioni affidabili nel tempo.",
+    "paragraph5": "Per digirolamoimpianti, il fotovoltaico non rappresenta soltanto un'evoluzione del mercato energetico, ma una scelta industriale precisa: contribuire alla transizione verso un modello più sostenibile attraverso infrastrutture progettate e realizzate secondo elevati standard tecnici.",
+    "mission": "Costruiamo impianti fotovoltaici combinando esperienza sul campo, competenza tecnica e attenzione per ogni dettaglio, con l'obiettivo di trasformare l'energia solare in valore concreto e duraturo.",
+    "highlights": {
+      "founded": {
+        "value": "2023",
+        "label": "Anno di fondazione"
+      },
+      "vcc": {
+        "value": "VCC",
+        "label": "Esperienza consolidata"
+      },
+      "pv": {
+        "value": "PV",
+        "label": "Specializzazione principale"
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "I nostri servizi",
+    "title": "Soluzioni impiantistiche costruite con esperienza e precisione.",
+    "description": "digirolamoimpianti mette a disposizione competenze tecniche, esperienza operativa e attenzione al dettaglio per realizzare interventi affidabili nel settore energetico, elettrico e della sicurezza.",
+    "footerTitle": "Un unico referente per impianti, energia e sicurezza.",
+    "footerDescription": "Ogni lavorazione viene affrontata con organizzazione, responsabilità e attenzione alle reali esigenze del progetto.",
+    "companyName": "digirolamoimpianti",
+    "items": {
+      "photovoltaic": {
+        "number": "01",
+        "title": "Impianti fotovoltaici",
+        "description": "Realizzazione di impianti fotovoltaici progettati per garantire efficienza, affidabilità e continuità produttiva. Seguiamo con precisione le attività di installazione, montaggio e predisposizione dell'impianto, con particolare attenzione alla qualità esecutiva e alla durata nel tempo.",
+        "highlights": {
+          "modules": "Installazione di moduli fotovoltaici",
+          "structures": "Montaggio delle strutture",
+          "connections": "Predisposizione dei collegamenti",
+          "civilIndustrial": "Interventi su impianti civili e industriali"
+        }
+      },
+      "electrical": {
+        "number": "02",
+        "title": "Impianti elettrici civili",
+        "description": "Realizziamo e adeguiamo impianti elettrici per abitazioni e ambienti civili, operando con un approccio ordinato, funzionale e attento alla sicurezza. Ogni intervento viene sviluppato in relazione alle caratteristiche dell'ambiente e alle esigenze del cliente.",
+        "highlights": {
+          "newSystems": "Nuovi impianti elettrici",
+          "upgrades": "Adeguamento degli impianti esistenti",
+          "panels": "Quadri e distribuzione elettrica",
+          "lighting": "Illuminazione interna ed esterna"
+        }
+      },
+      "alarms": {
+        "number": "03",
+        "title": "Sistemi di allarme",
+        "description": "Installiamo sistemi di allarme pensati per proteggere abitazioni, attività commerciali e aree operative. Le soluzioni vengono configurate in funzione degli spazi da controllare, riducendo i punti vulnerabili e migliorando il livello complessivo di protezione.",
+        "highlights": {
+          "intrusion": "Sistemi antintrusione",
+          "sensors": "Sensori perimetrali e volumetrici",
+          "devices": "Segnalazioni e dispositivi di allarme",
+          "custom": "Configurazioni personalizzate"
+        }
+      },
+      "vcc": {
+        "number": "04",
+        "title": "VCC",
+        "description": "L'esperienza maturata nel settore VCC rappresenta una delle basi tecniche dell'azienda. Competenza sul campo, capacità di coordinamento e attenzione alla corretta esecuzione consentono di affrontare ogni intervento con metodo, precisione e affidabilità.",
+        "highlights": {
+          "experience": "Esperienza operativa consolidata",
+          "installation": "Installazione e predisposizione",
+          "management": "Gestione ordinata delle lavorazioni",
+          "quality": "Attenzione a qualità e sicurezza"
+        }
+      }
+    }
+  },
+  "contacts": {
+    "eyebrow": "Contattaci",
+    "title": "Parliamo del tuo prossimo progetto.",
+    "description": "Contattaci per ricevere informazioni su impianti fotovoltaici, impianti elettrici civili, sistemi di allarme e lavorazioni VCC.",
+    "formTitle": "Richiedi informazioni",
+    "fields": {
+      "name": "Nome e cognome",
+      "namePlaceholder": "Mario Rossi",
+      "email": "Email",
+      "emailPlaceholder": "nome@email.it",
+      "phone": "Telefono",
+      "phonePlaceholder": "+39 000 000 0000",
+      "message": "Messaggio",
+      "messagePlaceholder": "Descrivi brevemente il progetto..."
+    },
+    "submit": "Invia richiesta",
+    "submitting": "Invio in corso...",
+    "success": "Messaggio inviato correttamente. Ti ricontatteremo al più presto.",
+    "genericError": "Si è verificato un errore durante l'invio.",
+    "sendError": "Non è stato possibile inviare il messaggio.",
+    "mapTitle": "digirolamoimpianti - Pescara",
+    "location": "Pescara, Abruzzo",
+    "locationDescription": "Operativi a Pescara e nelle zone limitrofe.",
+    "emailLabel": "Email",
+    "phoneLabel": "Telefono",
+    "emailValue": "info@digirolamoimpianti.it",
+    "phoneValue": "+39 000 000 0000"
+  }
 }

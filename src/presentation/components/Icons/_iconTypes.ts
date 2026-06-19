@@ -7,7 +7,7 @@ export type IconProps = {
    * @type string
    * @required
    */
-  id: string;
+  id?: string;
   /**
    * Define the size of the Icon.
    * @type "s" | "m" | "l" | "xl" | "full"

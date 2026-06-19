@@ -1,3 +1,120 @@
 {
-  "home.title": "Welcome to TestApp"
+  "header": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "contacts": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Energy and technology",
+    "title": "Energy that builds the future.",
+    "description": "We design and build efficient, reliable systems tailored to every customer's needs."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Technical experience and innovation serving the energy sector.",
+    "intro": "A young company built on expertise, method and knowledge developed through years of field experience.",
+    "paragraph1": "digirolamoimpianti was founded in July 2023 with the aim of transforming extensive technical and operational experience into a modern, reliable and forward-looking business.",
+    "paragraph2": "Although the company was recently established, its value is based on years of experience in the VCC sector, where accurate execution, system knowledge, organisational capability and attention to safety are essential requirements.",
+    "paragraph3": "This wealth of expertise now forms the foundation of digirolamoimpianti's main activity: the construction of photovoltaic systems. The company follows a practical and structured approach, managing every project according to the characteristics of the site, the customer's requirements and the energy objectives of the installation.",
+    "paragraph4": "From site preparation and structural installation to module assembly and system connection preparation, every stage is carried out with accuracy, coordination and responsibility. The goal is to build efficient and durable systems capable of delivering reliable performance over time.",
+    "paragraph5": "For digirolamoimpianti, photovoltaics are not merely an evolution of the energy market, but a clear industrial choice: contributing to the transition towards a more sustainable model through infrastructure designed and built according to high technical standards.",
+    "mission": "We build photovoltaic systems by combining field experience, technical expertise and attention to every detail, transforming solar energy into lasting and tangible value.",
+    "highlights": {
+      "founded": {
+        "value": "2023",
+        "label": "Year established"
+      },
+      "vcc": {
+        "value": "VCC",
+        "label": "Consolidated experience"
+      },
+      "pv": {
+        "value": "PV",
+        "label": "Main specialisation"
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "title": "Plant engineering solutions built with experience and precision.",
+    "description": "digirolamoimpianti provides technical expertise, operational experience and attention to detail to deliver reliable solutions in the energy, electrical and security sectors.",
+    "footerTitle": "One trusted partner for systems, energy and security.",
+    "footerDescription": "Every project is managed with organisation, responsibility and attention to its actual requirements.",
+    "companyName": "digirolamoimpianti",
+    "items": {
+      "photovoltaic": {
+        "number": "01",
+        "title": "Photovoltaic systems",
+        "description": "We build photovoltaic systems designed to provide efficiency, reliability and production continuity. Installation, assembly and system preparation are managed with particular attention to execution quality and long-term durability.",
+        "highlights": {
+          "modules": "Photovoltaic module installation",
+          "structures": "Support structure assembly",
+          "connections": "System connection preparation",
+          "civilIndustrial": "Civil and industrial installations"
+        }
+      },
+      "electrical": {
+        "number": "02",
+        "title": "Residential electrical systems",
+        "description": "We build and upgrade electrical systems for homes and residential environments using an organised, functional and safety-oriented approach. Every installation is developed according to the characteristics of the property and the customer's requirements.",
+        "highlights": {
+          "newSystems": "New electrical installations",
+          "upgrades": "Upgrades to existing systems",
+          "panels": "Electrical panels and distribution",
+          "lighting": "Indoor and outdoor lighting"
+        }
+      },
+      "alarms": {
+        "number": "03",
+        "title": "Alarm systems",
+        "description": "We install alarm systems designed to protect homes, commercial premises and operational areas. Each solution is configured according to the spaces that require monitoring, reducing vulnerable points and improving the overall level of protection.",
+        "highlights": {
+          "intrusion": "Intrusion detection systems",
+          "sensors": "Perimeter and motion sensors",
+          "devices": "Alarm signalling devices",
+          "custom": "Custom configurations"
+        }
+      },
+      "vcc": {
+        "number": "04",
+        "title": "VCC",
+        "description": "The experience developed in the VCC sector is one of the company's technical foundations. Field expertise, coordination skills and attention to correct execution allow every project to be managed with method, precision and reliability.",
+        "highlights": {
+          "experience": "Consolidated operational experience",
+          "installation": "Installation and preparation",
+          "management": "Organised work management",
+          "quality": "Focus on quality and safety"
+        }
+      }
+    }
+  },
+  "contacts": {
+    "eyebrow": "Contact",
+    "title": "Let's discuss your next project.",
+    "description": "Contact us for information about photovoltaic systems, residential electrical installations, alarm systems and VCC services.",
+    "formTitle": "Request information",
+    "fields": {
+      "name": "Full name",
+      "namePlaceholder": "John Smith",
+      "email": "Email",
+      "emailPlaceholder": "name@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+39 000 000 0000",
+      "message": "Message",
+      "messagePlaceholder": "Briefly describe your project..."
+    },
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "success": "Your message was sent successfully. We will contact you as soon as possible.",
+    "genericError": "An error occurred while sending your message.",
+    "sendError": "The message could not be sent.",
+    "mapTitle": "digirolamoimpianti- Pescara",
+    "location": "Pescara, Abruzzo",
+    "locationDescription": "Operating in Pescara and the surrounding areas.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "emailValue": "info@digirolamoimpianti.it",
+    "phoneValue": "+39 000 000 0000"
+  }
 }
