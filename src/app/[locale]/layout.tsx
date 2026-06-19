@@ -1,17 +1,27 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import "../globals.css";
 import cx from "classnames";
 import { dir } from "i18next";
+import "../globals.css";
 import i18nConfig from "../../../i18nConfig";
-import { Header } from "@/presentation/blocks";
-import { Footer } from "@/presentation/blocks";
+import { Footer, Header } from "@/presentation/blocks";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "digirolamo-impianti",
-  description: "nextjs ecommerce template app",
+  description:
+    "Impianti fotovoltaici, elettrici civili, sistemi di allarme e VCC.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#17212b",
+  colorScheme: "dark",
 };
 
 type RootLayoutProps = {
@@ -26,24 +36,27 @@ export default async function RootLayout({
   params,
 }: RootLayoutProps) {
   const { locale } = await params;
+
   return (
-    <html lang={locale} dir={dir(locale)}>
+    <html
+      lang={locale}
+      dir={dir(locale)}
+      className="min-h-full bg-[#17212b]"
+      suppressHydrationWarning
+    >
       <body
-        className={cx(
-          inter.className,
-          "h-screen flex flex-col justify-between",
-        )}
+        className={cx(inter.className, "min-h-dvh bg-[#17212b] text-white")}
       >
         <Header data-test-id="header" />
-        <div className="overflow-y-auto">
-          {children}
-          <Footer data-test-id="footer" />
-        </div>
+        <div className="min-h-dvh w-full bg-[#17212b]">{children}</div>
+        <Footer data-test-id="footer" />
       </body>
     </html>
   );
 }
 
 export function generateStaticParams() {
-  return i18nConfig.locales.map((locale: string) => ({ locale }));
+  return i18nConfig.locales.map((locale: string) => ({
+    locale,
+  }));
 }

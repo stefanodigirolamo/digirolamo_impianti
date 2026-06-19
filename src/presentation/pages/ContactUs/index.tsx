@@ -287,7 +287,7 @@ export function ContactUs({
                 </span>
               </a>
               <a
-                href="tel:+390000000000"
+                href="tel:+393288292776"
                 className="
                   rounded-xl border border-white/10
                   bg-white/[0.035] p-5

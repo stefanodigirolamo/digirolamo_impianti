@@ -100,7 +100,7 @@
       "email": "Email",
       "emailPlaceholder": "name@email.com",
       "phone": "Phone",
-      "phonePlaceholder": "+39 000 000 0000",
+      "phonePlaceholder": "+39 328 8292 776",
       "message": "Message",
       "messagePlaceholder": "Briefly describe your project..."
     },
@@ -114,7 +114,7 @@
     "locationDescription": "Operating in Pescara and the surrounding areas.",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
-    "emailValue": "info@digirolamoimpianti.it",
-    "phoneValue": "+39 000 000 0000"
+    "emailValue": "danieledigirolamo1982@gmail.com",
+    "phoneValue": "+39 328 8292 776"
   }
 }

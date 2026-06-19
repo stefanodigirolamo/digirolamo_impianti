@@ -10,6 +10,7 @@
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tanstack/react-query": "^5.20.2",
     "accept-language": "^3.0.18",
     "classnames": "^2.5.1",
