@@ -2,7 +2,7 @@
 
 import cx from "classnames";
 import Image, { type ImageProps, type StaticImageData } from "next/image";
-import type { ReactNode } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 
 export type HeroProps = {
   src: string | StaticImageData;
@@ -17,6 +17,9 @@ export type HeroProps = {
   priority?: boolean;
   sizes?: ImageProps["sizes"];
   showContent?: boolean;
+  scrollZoom?: boolean;
+  minScale?: number;
+  maxScale?: number;
 };
 
 export function Hero({
@@ -32,9 +35,77 @@ export function Hero({
   priority = false,
   sizes = "100vw",
   showContent = true,
+  scrollZoom = true,
+  minScale = 1,
+  maxScale = 1.15,
 }: HeroProps) {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const frameRef = useRef<number | null>(null);
+  const [scale, setScale] = useState(minScale);
+
+  useEffect(() => {
+    if (!scrollZoom) {
+      setScale(minScale);
+      return;
+    }
+
+    const updateScale = () => {
+      const element = heroRef.current;
+
+      if (!element) {
+        frameRef.current = null;
+        return;
+      }
+
+      const rect = element.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      /*
+       * progress:
+       * 0 = hero entering the viewport
+       * 1 = hero leaving the viewport
+       */
+      const progress = Math.min(
+        Math.max(
+          (viewportHeight - rect.top) / (viewportHeight + rect.height),
+          0,
+        ),
+        1,
+      );
+
+      const nextScale = minScale + progress * (maxScale - minScale);
+
+      setScale(nextScale);
+      frameRef.current = null;
+    };
+
+    const handleScroll = () => {
+      if (frameRef.current !== null) return;
+
+      frameRef.current = window.requestAnimationFrame(updateScale);
+    };
+
+    updateScale();
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    window.addEventListener("resize", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+
+      if (frameRef.current !== null) {
+        window.cancelAnimationFrame(frameRef.current);
+      }
+    };
+  }, [scrollZoom, minScale, maxScale]);
+
   return (
     <div
+      ref={heroRef}
       className={cx(
         "group relative w-full overflow-hidden rounded-md",
         heightClassName,
@@ -47,15 +118,11 @@ export function Hero({
         fill
         priority={priority}
         sizes={sizes}
-        className={cx(
-          `
-            object-cover
-            animate-[image-viewer-zoom_14s_ease-in-out_infinite_alternate]
-            transition-transform duration-700
-            group-hover:scale-[1.03]
-          `,
-          imageClassName,
-        )}
+        style={{
+          transform: `scale(${scale})`,
+          willChange: "transform",
+        }}
+        className={cx("object-cover", imageClassName)}
       />
       <div
         aria-hidden="true"

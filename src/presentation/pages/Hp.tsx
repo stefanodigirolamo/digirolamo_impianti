@@ -14,10 +14,7 @@ type HomepageSectionProps = {
   children: Children;
 };
 
-function HomepageSection({
-  id,
-  children,
-}: HomepageSectionProps) {
+function HomepageSection({ id, children }: HomepageSectionProps) {
   return (
     <section id={id} className="w-full scroll-mt-24">
       <Row
@@ -42,10 +39,12 @@ export function Hp() {
       <HomepageSection id="home">
         <Hero
           src={hpBackgroundSrc}
-          priority
           eyebrow={t("hero.eyebrow")}
           title={t("hero.title")}
           description={t("hero.description")}
+          scrollZoom
+          minScale={0.9}
+          maxScale={1.9}
         />
       </HomepageSection>
       <HomepageSection id="about-us">
